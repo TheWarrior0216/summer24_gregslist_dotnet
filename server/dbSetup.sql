@@ -38,13 +38,13 @@ SELECT
 FROM
   accounts
 WHERE
-  id = "66bb7bd91baeacf46d3e7517";
+  id = "66a159ea25b6830ef92e67e1";
 
 UPDATE accounts
 SET
   NAME = "Miata 4 EVER"
 WHERE
-  id = "66bb7bd91baeacf46d3e7517";
+  id = "66a159ea25b6830ef92e67e1";
 
 SELECT
   cars.*,
@@ -77,5 +77,13 @@ VALUES
     "v11",
     false,
     "yellow",
-    "66bb8385904c176f444e8947"
+    "66a159ea25b6830ef92e67e1"
   );
+
+  CREATE Table 
+  houses(
+    id NOT NULL INT PRIMARY KEY AUTO_INCREMENT,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT 'Time Created',
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last Update',
+
+  )
